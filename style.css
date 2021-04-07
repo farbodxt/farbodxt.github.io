@@ -1,0 +1,468 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    height:100vh;
+    width:98vw;
+    background-color:rgb(19, 20, 22);
+    overflow:scroll;
+    font-family: Lato, "Trebuchet MS", "Verdana", "sans-serif";
+  }
+.hero
+{
+    height: 100vh;
+    min-height: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 5px;
+    background-image:url(https://raw.githubusercontent.com/farbodxt/Week1/main/1.jpg);
+}
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items:top;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.navigation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-left: 30vw;
+    text-transform: uppercase;
+
+}
+a
+{
+    padding-right: 2vw;
+    padding-left: 2vw;
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+    cursor: pointer;
+}
+.name
+{
+color: white;
+}
+.text
+{
+text-align: center;
+color: white;
+}
+.ctaParrent
+{
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+align-content: center;
+text-align: center;
+}
+.cta
+{
+    width: 130px;
+    padding: 3px;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+#ctaPurple
+{
+    background-color: #9013feb4;
+    border-color: transparent;
+
+}
+#ctaPurple:hover
+{
+    text-align: center;
+cursor: pointer;
+background-color:rgba(255, 0, 0, 0.205);
+transition-duration: 0.3s;
+animation-duration: 1s;
+letter-spacing: 0.09rem;
+}
+#ctaPurple2
+{
+    background-color: rgba(39, 39, 39, 0.418);
+}
+#ctaPurple2:hover
+{
+text-align: center;
+cursor: pointer;
+background-color:rgba(255, 255, 255, 0.301);
+transition-duration: 0.3s;
+
+letter-spacing: 0.09rem;
+}
+.ctaSocial
+{
+    width: 100%;
+
+    
+}
+.ctaSocial:hover
+{
+    background-color: rgba(31, 31, 31, 0.938);
+    height: 100%;
+    transition: 1s;
+    transition-duration: 0.3s;
+}
+.purple
+{
+    color: #9013fe;
+}
+
+h1
+{
+ font-size: 10rem;
+ line-height: 0.1;
+}
+.about
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ color: white;
+}
+.stats
+{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.statsBox
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: center;
+ margin: 2rem;
+ border: 1px solid #9013fe;
+ border-radius: 5px;
+ width: 70px;
+ height: 70px;
+
+}
+.statsBox2
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.number
+{
+ font-size: 28pt;
+ text-align: center;
+}
+.stats
+{
+font-size:10pt;
+text-align: center;
+}
+.community
+{
+    margin-top: 10vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rainbow:hover
+{
+        background-image:    linear-gradient(
+           to right, 
+           #E7484F,
+           #E7484F 16.65%,
+           #F68B1D 16.65%,
+           #F68B1D 33.3%,
+           #FCED00 33.3%,
+           #FCED00 49.95%,
+           #009E4F 49.95%,
+           #009E4F 66.6%,
+           #00AAC3 66.6%,
+           #00AAC3 83.25%,
+           #732982 83.25%,
+           #732982 100%,
+           #E7484F 100%
+         );
+       animation:slidebg 5s linear infinite;
+}
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+  .btn {
+    transition: all 0.3s;
+    position: relative;
+    height: 3vh;
+    cursor: pointer;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+
+  }
+  .btn:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+
+.discord
+{
+    margin-top: 10vh;
+    width: 70vw;
+    height: 40vh;
+}
+.contact
+{
+    text-align: center;
+    margin-top: 2vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-end;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    width: 40vw;
+    height: 35vh;
+    margin-top: 12vh;
+    
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+
+  }
+  input,
+  textarea 
+  {
+    background-color:rgba(126, 123, 123, 0.884);
+    border: 2px solid rgba(117, 112, 112, 0.144);
+    border-radius: 1px;
+    padding: 6px;
+    margin-top: 1vh;
+    width: 20vw;
+  }
+  input[value]
+  {
+    color: white;
+  }
+  input[type=submit]:hover
+  {
+      cursor: pointer;
+      opacity: 35%;
+      letter-spacing: 2rem;
+      transition: 3s;
+  }
+  input[type=submit],textarea
+  {
+      background-color: #9013fe;
+      width: 21vw;
+      text-align: left;
+  }
+  .formFooter
+  {
+     display: flex;
+     flex-direction: row;
+     justify-content:space-around;
+     align-items:center;
+      background-color: rgba(126, 123, 123, 0.884);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+     height: 2rem;
+     width: 100%;
+    margin-bottom: 0;
+  }
+  .navigationBottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color:rgba(126, 123, 123, 0.884) ;
+    height: 4rem;
+}
+footer
+{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width: 400px)
+{
+  body
+  {
+    min-height: 600px;
+    min-width: 400px;
+  }
+  h1
+  {
+    font-size: 7rem;
+  }
+  .overlay
+  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation
+  {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  p
+  {
+   padding-top: 40px;
+   padding-bottom: 30px;
+  }
+  .discord
+  {
+    height: 400px;
+    width: auto;
+  }
+  .formContainer
+  {
+    width: 200px;
+    height: 500px;
+  }
+  input
+  {
+    width: 80%;
+  }
+  input[type=submit]
+  {
+    width: 100px;
+  }
+}
+@media only screen and (max-width:670px)
+{
+  body
+  {
+    min-height: 600px;
+    min-width: 670px;
+  }
+
+  h1
+  {
+    font-size: 6rem;
+    padding-bottom: 46px;
+  }
+  p
+  {
+    padding-bottom: 35px;
+    word-break: break-all;
+  }
+  .hero
+  {
+    height: 500px;
+  }
+  .name
+  {
+    margin-top:0px;
+  }
+  .overlay
+  {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height:500px;
+  }
+  .navigation
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+
+  .discord
+  {
+    height: 400px;
+    width: auto;
+  }
+  .formContainer
+  {
+    width: 500px;
+    min-height: 80vh;
+    height:250px ;
+  }
+  input
+  {
+    width: 80%;
+  }
+  input[type=submit]
+  {
+    width: 100px;
+  }
+  
+}
